@@ -4,8 +4,9 @@
 */
 
 <% if theme_name %> 
-@import "sass-bootstrap/lib/variables";
 @import "bootswatch-scss/<%=theme_name%>/variables";
+<% else %>
+@import "sass-bootstrap/lib/variables";
 <% end %>
 @import "sass-bootstrap/lib/bootstrap";
 <% if theme_name %> 
